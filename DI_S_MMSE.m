@@ -5,8 +5,8 @@ addpath('functions')
 
 %%%%%%%% = Parameters Initialization = %%%%%%%%%%
 %%% Parameters of transmitter
-M = 32;                % the number of subcarriers
-N = 16;                 % the number of time slots
+M = 64;                % the number of subcarriers
+N = 32;                 % the number of time slots
 lenCP = 16;            % the length of CP per OTFS frame, lenCP > tau_max
 P = 4;                   % the number of reflectors
 
@@ -125,6 +125,7 @@ for snr = 1:length(EbN0_dB)
         clc
         disp('===========================================================')
         display(EbN0_dB, 'EbN0 (dB)');
+        display(sim, 'Current simulation index');
         display(BER(1, :),'BER the 1st iteration');
         display(BER(2, :),'BER of the 2nd iteration');
         display(BER(5, :),'BER of the 5th iteration');

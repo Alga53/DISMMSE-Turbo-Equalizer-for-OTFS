@@ -5,8 +5,8 @@ addpath('functions')
 
 %%%%%%%% = Parameters Initialization = %%%%%%%%%%
 %%% Parameters of transmitter
-M = 32;                % the number of subcarriers
-N = 16;                 % the number of time slots
+M = 64;                % the number of subcarriers
+N = 32;                 % the number of time slots
 lenCP = 16;            % the length of CP per OTFS frame, lenCP > tau_max
 P = 4;                   % the number of reflectors
 
@@ -44,7 +44,7 @@ tol_fspai = 1e-3;            % the drop tolerance of FSPAI
 maxiter_fspai = P;          % the maximum node of degree of FSPAI
 
 %%% Parameters of simulation
-EbN0_dB = 8:9;
+EbN0_dB = 6:2:12;
 EbN0 = 10.^(EbN0_dB/10);
 Es = 1;                                                  % the average energy of symbols
 Eb = (lenSym+lenCP)*Es/lenBit;                % the average energy of bits
@@ -155,6 +155,7 @@ for snr = 1:length(EbN0_dB)
         clc
         disp('===========================================================')
         display(EbN0_dB, 'EbN0 (dB)');
+        display(sim, 'Current simulation index');
         display(BER(1, :),'BER the 1st iteration');
         display(BER(2, :),'BER of the 2nd iteration');
         display(BER(5, :),'BER of the 5th iteration');
