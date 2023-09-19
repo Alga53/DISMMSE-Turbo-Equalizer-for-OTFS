@@ -37,4 +37,4 @@ If your computer have multiple cores, you can utilize the "**parfor**" loops to 
 However, please note that when using the "parfor" loop, you will also need to comment out the display code at the end of the loop.  
 
 ## Contact
-Should you have any questions or find any errors, please do not hesitate to let us know:{lihaotian@stu.hit.edu.cn}
+Should you have any questions or find any errors, please do not hesitate to let me know:{htianli503@gmail.com}
