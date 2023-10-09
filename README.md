@@ -32,7 +32,7 @@ Our code is developed and tested on MATLAB 2019a.
 
 **Speedup Trick**
 
-If your computer have multiple cores, you can utilize the "**parfor**" loops to execute this code in parallel on workers, which can significantly speed up the calculations. Specifically, you can replace the line "for sim = 1:sumSim" with "parfor sim = 1:sumSim" in both `DI_S_MMSE.m` and `DI_S_MMSE_Turbo.m`. 
+If your computer has multiple cores, you can utilize the "**parfor**" loops to execute this code in parallel on workers, which can significantly speed up the calculations. Specifically, you can replace the line "for sim = 1:sumSim" with "parfor sim = 1:sumSim" in both `DI_S_MMSE.m` and `DI_S_MMSE_Turbo.m`. 
 
 However, please note that when using the "parfor" loop, you will also need to comment out the display code at the end of the loop.  
 
