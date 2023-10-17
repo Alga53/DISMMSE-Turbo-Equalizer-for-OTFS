@@ -1,5 +1,8 @@
 # DI-S-MMSE Turbo Equalization for OTFS Modulation
 
+[![paper](https://ieeexplore.ieee.org/document/10018250)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ![](figures/BER_performance.png)
 
 ## About
